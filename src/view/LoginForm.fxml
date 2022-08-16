@@ -9,7 +9,6 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="loginformPane" prefHeight="675.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73c2fb" height="50.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="612.0" />
@@ -33,7 +32,7 @@
             <Font name="Ebrima Bold" size="22.0" />
          </font>
       </JFXTextField>
-      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="198.0" layoutY="495.0" prefHeight="65.0" prefWidth="217.0" style="-fx-background-color: #73c2fb; -fx-background-radius: 50;" text="Login">
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="198.0" layoutY="495.0" onAction="#loginOnAction" prefHeight="65.0" prefWidth="217.0" style="-fx-background-color: #73c2fb; -fx-background-radius: 50;" text="Login">
          <font>
             <Font name="Gadugi Bold" size="30.0" />
          </font>

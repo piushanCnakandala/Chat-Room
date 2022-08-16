@@ -10,31 +10,37 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="userFormPane" prefHeight="675.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserFormController">
+
+<AnchorPane prefHeight="675.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73c2fb" height="50.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="612.0" />
-      <Label layoutX="69.0" layoutY="14.0" prefHeight="31.0" prefWidth="110.0" text="Chat Room">
-         <font>
-            <Font name="Ebrima Bold" size="19.0" />
-         </font>
-      </Label>
       <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/chat-bubble-96.png" />
          </image>
       </ImageView>
+      <Label layoutX="68.0" layoutY="10.0" prefHeight="31.0" prefWidth="110.0" text="Chat Room">
+         <font>
+            <Font name="Ebrima Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="10.0" prefHeight="31.0" prefWidth="110.0" text="Server">
+         <font>
+            <Font name="Ebrima Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXTextArea layoutY="51.0" prefHeight="574.0" prefWidth="612.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7cb9e8" height="50.0" layoutY="625.0" opacity="0.43" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="612.0" />
-      <JFXTextArea layoutY="50.0" prefHeight="574.0" prefWidth="612.0" />
-      <JFXButton buttonType="RAISED" layoutX="485.0" layoutY="635.0" onAction="#sentOnAction" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #73c2fb;" text="Send">
+      <TextField layoutX="68.0" layoutY="635.0" prefHeight="31.0" prefWidth="416.0" />
+      <JFXButton buttonType="RAISED" layoutX="499.0" layoutY="635.0" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #73c2fb;" text="Send">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="14.0" layoutY="635.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="31.0" fitWidth="32.0" layoutX="20.0" layoutY="635.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/img/img.png" />
          </image>
       </ImageView>
-      <TextField fx:id="txtSendMessage" layoutX="56.0" layoutY="635.0" prefHeight="31.0" prefWidth="416.0" />
    </children>
 </AnchorPane>

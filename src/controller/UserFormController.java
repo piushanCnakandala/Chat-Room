@@ -1,9 +1,11 @@
 package controller;
 
+import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.net.Socket;
 
 public class UserFormController {
@@ -16,4 +18,10 @@ public class UserFormController {
 
     }
 
+    public void sentOnAction(ActionEvent actionEvent) throws IOException {
+        PrintWriter printWriter= new PrintWriter(socket.getOutputStream());
+        printWriter.println(txtSendMessage.getText());
+        printWriter.flush();
+        txtSendMessage.clear();
+    }
 }
