@@ -1,4 +1,4 @@
-package controller;
+package controller.server;
 
 import javafx.fxml.Initializable;
 
