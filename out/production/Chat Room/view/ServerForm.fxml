@@ -10,8 +10,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="675.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerFormController">
+<AnchorPane prefHeight="675.0" prefWidth="612.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.server.ServerFormController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#73c2fb" height="50.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="612.0" />
       <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
@@ -29,10 +28,10 @@
             <Font name="Ebrima Bold" size="19.0" />
          </font>
       </Label>
-      <JFXTextArea layoutY="51.0" prefHeight="574.0" prefWidth="612.0" />
+      <JFXTextArea fx:id="txtChatArea" layoutY="51.0" prefHeight="574.0" prefWidth="612.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7cb9e8" height="50.0" layoutY="625.0" opacity="0.43" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="612.0" />
       <TextField layoutX="68.0" layoutY="635.0" prefHeight="31.0" prefWidth="416.0" />
-      <JFXButton buttonType="RAISED" layoutX="499.0" layoutY="635.0" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #73c2fb;" text="Send">
+      <JFXButton buttonType="RAISED" layoutX="499.0" layoutY="635.0" onAction="#btnSendMessage" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #73c2fb;" text="Send">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
