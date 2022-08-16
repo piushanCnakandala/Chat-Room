@@ -50,4 +50,7 @@ public class ServerFormController implements Initializable {
         }
     }
 
+    public void btnSendMessage(ActionEvent actionEvent) {
+
+    }
 }

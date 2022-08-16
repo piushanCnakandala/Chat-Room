@@ -27,7 +27,7 @@
             <Image url="@../assets/img/user.png" />
          </image>
       </ImageView>
-      <JFXTextField fx:id="txtUserName" layoutX="157.0" layoutY="383.0" prefHeight="59.0" prefWidth="304.0" promptText="User Name">
+      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="157.0" layoutY="383.0" prefHeight="59.0" prefWidth="304.0" promptText="User Name">
          <font>
             <Font name="Ebrima Bold" size="22.0" />
          </font>

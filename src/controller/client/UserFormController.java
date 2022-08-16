@@ -1,12 +1,12 @@
 package controller.client;
 
 import com.jfoenix.controls.JFXTextArea;
+import controller.Data;
 import javafx.event.ActionEvent;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import util.ConnectionUtil;
 
-import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -22,7 +22,7 @@ public class UserFormController {
 
     public void initialize() throws IOException {
 
-        System.out.println("userName is : " + userName);
+        System.out.println("userName is : " + Data.userName);
         socket = new Socket(ConnectionUtil.host, ConnectionUtil.port);
         txtChatArea.appendText("Connect. \n");
         printWriter = new PrintWriter(socket.getOutputStream());
@@ -33,7 +33,7 @@ public class UserFormController {
 
     public void sentOnAction(ActionEvent actionEvent) throws IOException {
         PrintWriter printWriter= new PrintWriter(socket.getOutputStream());
-        printWriter.println(userName + " : " + txtSendMessage.getText());
+        printWriter.println(Data.userName + " : " + txtSendMessage.getText());
         printWriter.flush();
         txtSendMessage.clear();
     }
